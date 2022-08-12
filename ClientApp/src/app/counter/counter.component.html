@@ -1,0 +1,16 @@
+<h1>Welcome to Chirpus Pizza!</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td style="color: green; font-weight: bold; min-width:100px">Name</td>
+      <td style="color: green; font-weight: bold; min-width:50px">Category</td>
+      <td style="color: green; font-weight: bold; min-width:75px">Price</td>
+    </tr>
+    <tr *ngFor="let currMenuItem of theMenuItems">
+      <td style="color: red">{{currMenuItem.ItemName | uppercase}}</td>
+      <td style="color: blueviolet">{{currMenuItem.Category}}</td>
+      <td style="color: blue">{{currMenuItem.Price | currency}}</td>
+    </tr>
+  </tbody>
+</table>
